@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+
+	<service uuid="1800">
+      <description>Generic Access Profile</description>
+ 
+	  <!-- Device Name -->                                        
+	  <!-- org.bluetooth.characteristic.gap.device_name -->
+      <characteristic uuid="2a00" id="xgatt_device_name">
+        <properties read="true" />
+        <value>ECG-Sensor 8060841C</value>
+      </characteristic>
+
+	  <!-- Appearance -->
+	  <!-- org.bluetooth.characteristic.gap.appearance -->
+      <characteristic uuid="2a01">
+        <properties read="true" const="true" />
+        <value>4142</value>
+      </characteristic>
+    </service>
+
+    <service uuid="F9266FD7-EF07-45D6-8EB6-BD74F13620F9" advertise="true">
+        <description>EKG Measurements</description>
+     
+		<characteristic uuid="4585C102-7784-40B4-88E1-3CB5C4FD37A3" id="xgatt_rx">
+            <properties notify="true"/>
+			<value length="20" type="hex" ></value>
+			<description>RX</description>
+        </characteristic>
+		
+    </service>
+
+</configuration>

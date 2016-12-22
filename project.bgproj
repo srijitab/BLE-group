@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<project device = "bgm111">
+    
+	<gatt in="gatt.xml" />
+    
+	<hardware in="hardware.xml" />    
+    
+	<scripting>
+	<script in="scottcode.bgs" />
+	</scripting>
+	<image out="ScottECG.hex" />    
+</project>

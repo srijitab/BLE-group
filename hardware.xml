@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<hardware>
+       
+	<!-- ADC inputs: PB11 is pin P8 -->
+	<gpio port="B" pin="11" mode="input" out="0"/>
+
+	<!-- ADCs enabled -->
+	<adc enable="true" />
+	<sleep enable="true" />
+	<ctune value="0" />
+
+</hardware>
+
